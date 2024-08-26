@@ -31,6 +31,6 @@ public class rentBooks {
         ConsoleStuff.printSeperator(30);
         ConsoleStuff.pressToContinue();
         System.out.println("Would you like to start over or end?");
-        
+
     }
 }
