@@ -13,7 +13,6 @@ public class ReturnBooks {
 
     public static void returnBooksRented() {
 
-        ConsoleStuff.printSeperator(30);
         rentedBooks.add("");
         rentedBooks.add("1. Harry potter");
         rentedBooks.add("2. SPQR");

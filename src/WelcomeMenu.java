@@ -40,6 +40,7 @@ public class WelcomeMenu {
         if(userChoice == 2) {
             ReturnBooks.returnBooksDisplay("You want to return a book");
             ConsoleStuff.printSeperator(30);
+            ReturnBooks.returnBooksRented();
             StartOverAgain.userEnd();
         }
 

@@ -7,7 +7,7 @@ public class StartOverAgain {
     public static void userEnd() {
         ConsoleStuff.printSeperator(30);
         ConsoleStuff.pressToContinue();
-        System.out.println("Would you like to start over or end?");
+        System.out.println("Would you like to start over or end? Press 1 to contiune or 2 to shutdown");
 
         int userInput;
 
@@ -29,6 +29,7 @@ public class StartOverAgain {
         }
 
         if (userInput == 2) {
+            System.out.println("System closing");
             System.exit(0);
         }
 
