@@ -6,7 +6,7 @@ public class rentBooks {
 
     static Scanner scanner = new Scanner(System.in);
 
-    public static void rentedBooks() {
+    public static void rentBooksOption() {
         ArrayList<String> booksStorage = new ArrayList<>();
 
 
@@ -25,12 +25,12 @@ public class rentBooks {
         ConsoleStuff.printSeperator(30);
 
         int userChoice = scanner.nextInt();
-        System.out.println("You choose: " + booksStorage.get(userChoice));
+        System.out.println("You have now rented: " + booksStorage.get(userChoice));
         String userRentedBookChoice = booksStorage.get(userChoice);
 
-        ConsoleStuff.printSeperator(30);
-        ConsoleStuff.pressToContinue();
-        System.out.println("Would you like to start over or end?");
+    }
+
+
 
     }
-}
+

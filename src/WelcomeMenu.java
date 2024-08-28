@@ -12,8 +12,8 @@ public class WelcomeMenu {
         ConsoleStuff.printSeperator(30);
         System.out.println(prompt);
         ConsoleStuff.printSeperator(30);
-        ConsoleStuff.pressToContinue();
     }
+
     public static void userWelcomeChoice() {
        int userChoice;
 
@@ -32,16 +32,22 @@ public class WelcomeMenu {
         if(userChoice == 1) {
             System.out.println("You have chosen to rent a book");
             ConsoleStuff.printSeperator(30);
-            rentBooks.rentedBooks();
+            rentBooks.rentBooksOption();
+            StartOverAgain.userEnd();
 
         }
 
         if(userChoice == 2) {
-            System.out.println("You want to return a book");
+            ReturnBooks.returnBooksDisplay("You want to return a book");
+            ConsoleStuff.printSeperator(30);
+            StartOverAgain.userEnd();
         }
 
         if(userChoice == 3) {
-            System.out.println("You would like to see your loaned books");
+            UserRentedBooks.returnBooksDisplay("You want to see your rented books");
+            UserRentedBooks.BooksRented();
+            StartOverAgain.userEnd();
+
         }
 
     }
